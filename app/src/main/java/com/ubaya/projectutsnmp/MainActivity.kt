@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnTeam.setOnClickListener {
             val intent = Intent(this, WhoWeAreActivity::class.java)
             startActivity(intent)
+            // Lebah Ganteng
         }
 
         // Menggunakan binding untuk tombol "Our Schedule"
