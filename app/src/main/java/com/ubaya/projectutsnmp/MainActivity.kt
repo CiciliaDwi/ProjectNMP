@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnGame.setOnClickListener {
             val intent = Intent(this, ListGame::class.java)
             startActivity(intent)
+            //dasdas
         }
 
         // Menggunakan binding untuk tombol "Who We Are"
