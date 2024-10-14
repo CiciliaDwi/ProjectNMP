@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Logo atau gambar game -->
+
+    <!-- Spinner untuk filter pencapaian berdasarkan tahun -->
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="E-Sports"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/gameLogo"
+        android:layout_width="325dp"
+        android:layout_height="246dp"
+        android:layout_gravity="center"
+        android:contentDescription="Game Logo"
+        android:src="@drawable/valorant" />
+
+    <!-- Daftar pencapaian tim -->
+
+    <ListView
+        android:id="@+id/teamsList"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
