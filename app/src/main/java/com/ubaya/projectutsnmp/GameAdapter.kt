@@ -28,6 +28,13 @@ class GameAdapter() : RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
         val game = GameData.game[position]
         holder.bind(game)
 
+        holder.binding.btnTeams.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, TeamsPageActivity::class.java)
+            intent.putExtra("GAME_NAME", "Valorant")  // Or "PUBG", "Mobile Legends", etc.
+            context.startActivity(intent)
+        }
+
         holder.itemView.setOnClickListener {
             val context = holder.itemView.context
             val intent = Intent(context, ActivityWhatWePlayBinding::class.java)
@@ -38,4 +45,6 @@ class GameAdapter() : RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
         holder.binding.txtJudulGames.text = GameData.game[position].judul
         holder.binding.txtDescGames.text = GameData.game[position].desc
     }
+
+
 }

@@ -18,9 +18,6 @@ class ListGame : AppCompatActivity() {
         binding.recGame.setHasFixedSize(true)
         binding.recGame.adapter = GameAdapter()
 
-        val intent = Intent(this, TeamsPageActivity::class.java)
-        intent.putExtra("GAME_NAME", "Valorant")  // Or "PUBG", "Mobile Legends", etc.
-        startActivity(intent)
     }
     override fun onResume() {
         super.onResume()
