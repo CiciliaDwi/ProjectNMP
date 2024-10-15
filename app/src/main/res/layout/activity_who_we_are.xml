@@ -42,11 +42,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="299dp"
-        android:text="Who We Are"
+        android:text="EVOS"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
@@ -55,7 +57,7 @@
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:autoText="false"
-        android:text="NMP is known for its cohesion, quick adaptability, and innovative strategies in every match. We have a reputation for being disciplined, passionate, and consistently playing with a champion's mindset. Individual skills combined with solid teamwork are our key strengths, enabling us to overcome challenges in high-level competitions. Our vision is to become a leading e-sports team on the international stage, while continuously inspiring the younger generation to pursue their dreams in professional gaming."
+        android:text="EVOS Esports is one of the largest and most popular esports organizations in Southeast Asia, especially in Indonesia. Founded in 2016, EVOS Esports has achieved numerous victories in both national and international esports competitions. The organization fields teams in various popular games such as Mobile Legends: Bang Bang, PUBG Mobile, Free Fire, Arena of Valor, and League of Legends."
         android:textAlignment="textStart"
         android:textColor="#E4E4E4"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -99,6 +101,6 @@
         android:layout_marginEnd="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_call" />
+        android:src="@drawable/evos"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
