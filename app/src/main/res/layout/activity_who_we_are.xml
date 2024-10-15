@@ -9,31 +9,33 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="494dp"
+        android:layout_height="988dp"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/profiles" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/garis" />
+        app:srcCompat="@drawable/menu" />
 
     <TextView
         android:id="@+id/textView"
@@ -43,6 +45,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="299dp"
         android:text="Who We Are"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
@@ -54,6 +57,7 @@
         android:autoText="false"
         android:text="NMP is known for its cohesion, quick adaptability, and innovative strategies in every match. We have a reputation for being disciplined, passionate, and consistently playing with a champion's mindset. Individual skills combined with solid teamwork are our key strengths, enabling us to overcome challenges in high-level competitions. Our vision is to become a leading e-sports team on the international stage, while continuously inspiring the younger generation to pursue their dreams in professional gaming."
         android:textAlignment="textStart"
+        android:textColor="#E4E4E4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -68,6 +72,7 @@
         android:layout_marginStart="252dp"
         android:layout_marginBottom="128dp"
         android:text="0"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnLike"

@@ -9,12 +9,14 @@
     tools:context=".ScheduleDetailActivity">
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView18"
+        android:layout_width="536dp"
+        android:layout_height="1017dp"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cardView"
@@ -132,22 +134,22 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/garis" />
+        app:srcCompat="@drawable/menu" />
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/profiles" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,25 +9,25 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/profiles" />
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/garis" />
+        app:srcCompat="@drawable/menu" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recGame"

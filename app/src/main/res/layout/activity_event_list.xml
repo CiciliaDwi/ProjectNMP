@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/profiles" />
 
     <ImageView
         android:id="@+id/imageView16"
@@ -27,7 +27,7 @@
         app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/garis" />
+        app:srcCompat="@drawable/menu" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recSchedule"
