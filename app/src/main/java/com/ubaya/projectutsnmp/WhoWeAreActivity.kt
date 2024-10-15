@@ -34,7 +34,7 @@ class WhoWeAreActivity : AppCompatActivity() {
         val likeButton: Button = findViewById(R.id.btnLike)
 
         likeButton.setOnClickListener {
-            likeCount = 1
+            likeCount++
             likeText.text = likeCount.toString()
             Log.d("WhoWeAreActivity", "Button clicked, current like count: $likeCount")
 
