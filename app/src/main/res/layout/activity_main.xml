@@ -9,12 +9,14 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView19"
+        android:layout_width="536dp"
+        android:layout_height="1017dp"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bg" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -26,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTeam"
-        app:srcCompat="@drawable/schedule" />
+        app:srcCompat="@drawable/schedules" />
 
     <Button
         android:id="@+id/btnSchedule"
@@ -47,7 +49,6 @@
         android:layout_marginEnd="131dp"
         android:text="What We Play"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -61,18 +62,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/game" />
+        app:srcCompat="@drawable/baseline_videogame_asset_24" />
 
     <Button
         android:id="@+id/btnTeam"
         android:layout_width="162dp"
         android:layout_height="47dp"
         android:layout_marginStart="131dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="131dp"
         android:text="Who We Are"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -81,32 +82,31 @@
         android:layout_width="115dp"
         android:layout_height="100dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="148dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGame"
-        app:srcCompat="@drawable/team" />
+        app:srcCompat="@drawable/teams" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/garis" />
+        app:srcCompat="@drawable/menu" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/profiles" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

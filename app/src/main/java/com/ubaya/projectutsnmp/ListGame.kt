@@ -27,7 +27,6 @@ class ListGame : AppCompatActivity() {
         binding.recGame.layoutManager = LinearLayoutManager(this)
         binding.recGame.setHasFixedSize(true)
         binding.recGame.adapter = GameAdapter()
-
     }
 
 }
