@@ -16,12 +16,10 @@
 
         <LinearLayout
             android:id="@+id/layout1"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="16dp">
-
-            <!-- Month TextView -->
 
             <TextView
                 android:id="@+id/eventDate"
@@ -31,10 +29,6 @@
                 android:text="SEP 05"
                 android:textColor="#000000"
                 android:textSize="14sp" />
-
-            <!-- Day TextView -->
-
-            <!-- Event Title TextView -->
 
             <TextView
                 android:id="@+id/eventTitle"
@@ -46,8 +40,6 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
-            <!-- Event Details TextView -->
-
             <TextView
                 android:id="@+id/eventTeam"
                 android:layout_width="wrap_content"
@@ -57,8 +49,6 @@
                 android:textColor="#000000"
                 android:textSize="12sp"
                 android:textStyle="bold" />
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
