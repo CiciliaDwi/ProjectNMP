@@ -1,5 +1,6 @@
 package com.ubaya.projectutsnmp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,6 +17,10 @@ class ListGame : AppCompatActivity() {
         binding.recGame.layoutManager = LinearLayoutManager(this)
         binding.recGame.setHasFixedSize(true)
         binding.recGame.adapter = GameAdapter()
+
+        val intent = Intent(this, TeamsPageActivity::class.java)
+        intent.putExtra("GAME_NAME", "Valorant")  // Or "PUBG", "Mobile Legends", etc.
+        startActivity(intent)
     }
     override fun onResume() {
         super.onResume()
@@ -24,4 +29,5 @@ class ListGame : AppCompatActivity() {
         binding.recGame.adapter = GameAdapter()
 
     }
+
 }

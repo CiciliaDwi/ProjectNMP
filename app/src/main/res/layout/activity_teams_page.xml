@@ -1,40 +1,45 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:baselineAligned="false"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TeamsPageActivity">
 
-    <!-- Logo atau gambar game -->
-
-    <!-- Spinner untuk filter pencapaian berdasarkan tahun -->
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="E-Sports"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="?attr/colorPrimary"
+        android:title="Teams"
+        android:titleTextColor="@android:color/white" />
 
+    <!-- Banner Image -->
     <ImageView
-        android:id="@+id/gameLogo"
-        android:layout_width="325dp"
-        android:layout_height="246dp"
-        android:layout_gravity="center"
-        android:contentDescription="Game Logo"
-        android:src="@drawable/valorant" />
+        android:id="@+id/bannerImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:src="@drawable/valorant"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <!-- Daftar pencapaian tim -->
+    <!-- RecyclerView for Teams List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/teamsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/bannerImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="16dp"
+        android:clipToPadding="false"/>
 
-    <ListView
-        android:id="@+id/teamsList"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp" />
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
