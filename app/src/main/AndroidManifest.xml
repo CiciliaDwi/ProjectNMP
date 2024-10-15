@@ -16,9 +16,6 @@
             android:name=".ListGame"
             android:exported="false" />
         <activity
-            android:name=".GameListActivity"
-            android:exported="false" />
-        <activity
             android:name=".TeamsPageActivity"
             android:exported="false" />
         <activity
@@ -26,9 +23,6 @@
             android:exported="true" />
         <activity
             android:name=".AchievementsDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".WhatWePlayActivity"
             android:exported="false" />
         <activity
             android:name=".ScheduleDetailActivity"
