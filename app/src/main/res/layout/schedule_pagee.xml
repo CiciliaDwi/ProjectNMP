@@ -9,6 +9,7 @@
         android:id="@+id/card1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:cardBackgroundColor="#00001C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -16,7 +17,7 @@
 
         <LinearLayout
             android:id="@+id/layout1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="16dp">
@@ -27,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="SEP 05"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
             <TextView
@@ -36,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="Regional Qualifier - Valorant"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -46,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="Valorant - Team A"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 android:textStyle="bold" />
         </LinearLayout>
