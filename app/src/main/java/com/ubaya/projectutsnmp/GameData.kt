@@ -16,10 +16,10 @@ object GameData {
                     id = 1,
                     nama = "Onic Valo",
                     member = listOf(
-                        MemberBank("Nanda", "Duelist","https://i.pravatar.cc/300?img=15"),
-                        MemberBank("Cicil", "Initiator","https://i.pravatar.cc/300?img=59"),
-                        MemberBank("Cecil", "Controller","https://i.pravatar.cc/300?img=58"),
-                        MemberBank("Yehuda", "Sentinel","https://i.pravatar.cc/300?img=18")
+                        MemberBank("Nanda", "Duelist",R.drawable.pictnmp),
+                        MemberBank("Cicil", "Initiator",R.drawable.pictnmp),
+                        MemberBank("Cecil", "Controller",R.drawable.pictnmp),
+                        MemberBank("Yehuda", "Sentinel",R.drawable.pictnmp)
                     )
                 )
             )
@@ -38,10 +38,10 @@ object GameData {
                     id = 1,
                     nama = "Onic Valo",
                     member = listOf(
-                        MemberBank("Riby", "Support","https://i.pravatar.cc/300?img=15"),
-                        MemberBank("Elifel", "Tank","https://i.pravatar.cc/300?img=59"),
-                        MemberBank("Nicole", "Fighter","https://i.pravatar.cc/300?img=58"),
-                        MemberBank("Sara", "Mage","https://i.pravatar.cc/300?img=18")
+                        MemberBank("Riby", "Support",R.drawable.pictnmp),
+                        MemberBank("Elifel", "Tank",R.drawable.pictnmp),
+                        MemberBank("Nicole", "Fighter",R.drawable.pictnmp),
+                        MemberBank("Sara", "Mage",R.drawable.pictnmp)
                     )
                 )
             )
@@ -60,10 +60,10 @@ object GameData {
                     id = 1,
                     nama = "Onic Valo",
                     member = listOf(
-                        MemberBank("Audry", "Scout","https://i.pravatar.cc/300?img=15"),
-                        MemberBank("Calista", "Support","https://i.pravatar.cc/300?img=59"),
-                        MemberBank("Cindy", "Rusher","https://i.pravatar.cc/300?img=58"),
-                        MemberBank("Grace", "Sniper","https://i.pravatar.cc/300?img=18")
+                        MemberBank("Audry", "Scout",R.drawable.pictnmp),
+                        MemberBank("Calista", "Support",R.drawable.pictnmp),
+                        MemberBank("Cindy", "Rusher",R.drawable.pictnmp),
+                        MemberBank("Grace", "Sniper",R.drawable.pictnmp)
                     )
                 )
             )
