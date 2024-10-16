@@ -35,6 +35,7 @@ class EventAdapter() : RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
             intent.putExtra("EVENT_TGL", event.tgl)
             intent.putExtra("EVENT_TIM", event.tim)
             intent.putExtra("EVENT_IMAGE", event.image)
+            intent.putExtra("EVENT_DESC", event.desc)
             context.startActivity(intent)
         }
         holder.binding.eventDate.text = EventData.event[position].tgl

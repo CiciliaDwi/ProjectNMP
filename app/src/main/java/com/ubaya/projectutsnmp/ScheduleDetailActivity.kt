@@ -25,12 +25,14 @@ class ScheduleDetailActivity : AppCompatActivity() {
         val eventTgl = intent.getStringExtra("EVENT_TGL")
         val eventTim = intent.getStringExtra("EVENT_TIM")
         val eventImage = intent.getIntExtra("EVENT_IMAGE", 0)
+        val eventDesc = intent.getStringExtra("EVENT_DESC")
 
         // Menampilkan data di layout, sesuaikan dengan ID view yang ada di activity_schedule_detail.xml
         binding.txtJudul.text = eventName
         binding.txtTgl.text = eventTgl
         binding.txtTeam.text = eventTim
         binding.imageView2.setImageResource(eventImage)
+        binding.eventDesc.text = eventDesc
 
         // Menggunakan binding untuk tombol "Notify Me"
         binding.notifyButton.setOnClickListener {
