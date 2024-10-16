@@ -1,5 +1,6 @@
 package com.ubaya.projectutsnmp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -38,6 +39,11 @@ class ScheduleDetailActivity : AppCompatActivity() {
         binding.notifyButton.setOnClickListener {
             // Tampilkan toast message menggunakan binding
             Toast.makeText(this, "Notification created.", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.imageProfile2.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
     }
 }

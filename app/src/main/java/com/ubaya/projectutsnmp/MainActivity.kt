@@ -22,20 +22,21 @@ class MainActivity : AppCompatActivity() {
         binding.btnGame.setOnClickListener {
             val intent = Intent(this, ListGame::class.java)
             startActivity(intent)
-            //dasdas
-            //dfdfbsjdf
         }
 
         // Menggunakan binding untuk tombol "Who We Are"
         binding.btnTeam.setOnClickListener {
             val intent = Intent(this, WhoWeAreActivity::class.java)
             startActivity(intent)
-            // Lebah Ganteng
         }
 
         // Menggunakan binding untuk tombol "Our Schedule"
         binding.btnSchedule.setOnClickListener {
             val intent = Intent(this, EventListActivity::class.java)
+            startActivity(intent)
+        }
+        binding.imgProfile.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
 

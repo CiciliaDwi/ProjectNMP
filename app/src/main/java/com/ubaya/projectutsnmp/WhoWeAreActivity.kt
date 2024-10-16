@@ -1,5 +1,6 @@
 package com.ubaya.projectutsnmp
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -38,6 +39,11 @@ class WhoWeAreActivity : AppCompatActivity() {
             likeText.text = likeCount.toString()
             Log.d("WhoWeAreActivity", "Button clicked, current like count: $likeCount")
 
+        }
+
+        binding.imageView.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
     }
 }

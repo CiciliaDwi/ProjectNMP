@@ -1,5 +1,6 @@
 package com.ubaya.projectutsnmp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,6 +17,11 @@ class EventListActivity : AppCompatActivity() {
         binding.recSchedule.layoutManager = LinearLayoutManager(this)
         binding.recSchedule.setHasFixedSize(true)
         binding.recSchedule.adapter = EventAdapter()
+
+        binding.imageProfile.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
     }
     override fun onResume() {
         super.onResume()

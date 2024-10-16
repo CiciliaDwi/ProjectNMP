@@ -58,7 +58,7 @@
             app:srcCompat="@drawable/esports1" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageNotif"
             android:layout_width="36dp"
             android:layout_height="37dp"
             android:layout_marginStart="152dp"
@@ -143,7 +143,7 @@
         app:srcCompat="@drawable/menu" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageProfile2"
         android:layout_width="55dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
