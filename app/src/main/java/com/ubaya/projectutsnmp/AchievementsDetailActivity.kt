@@ -7,84 +7,77 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.ubaya.projectutsnmp.databinding.ActivityAchievementsDetailBinding
-
-private lateinit var binding: ActivityAchievementsDetailBinding
 
 class AchievementsDetailActivity : AppCompatActivity() {
 
-    // List pencapaian (achievements)
-    private val achievements = listOf(
-        "Champions of the Regional Valorant Showdown (2023) - Team A",
-        "Best Defensive Team Award (2024) - Team A",
-        "MVP of the Season (2023) - Team B",
-        "Flawless Victory at the Spring Valorant Cup (2022) - Team A",
-        "Top 4 Finish in the International Valorant Championship (2023) - Team C"
-    )
-
-    // List yang akan ditampilkan setelah difilter
-    private lateinit var filteredAchievements: MutableList<String>
+    private lateinit var binding: ActivityAchievementsDetailBinding
     private lateinit var achievementList: ListView
     private lateinit var spinnerTahun: Spinner
     private lateinit var adapter: ArrayAdapter<String>
+    private var filteredAchievements = mutableListOf<String>() // Filtered list
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAchievementsDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Atur padding untuk edge-to-edge
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        // Mengambil list achievement dari Intent
+        val achievements = intent.getParcelableArrayListExtra<AchievementBank>("achievement")
+
+        // Mengambil nama game dari Intent
+        val namaGame = intent.getStringExtra("nama")
+
+        // Set the title or any UI component with the game name
+        if (namaGame != null) {
+            title = "Achievements for $namaGame"
         }
 
-        // Inisialisasi Spinner dan ListView
-        spinnerTahun = findViewById(R.id.spinnerTahun)
+        // Jika data achievement tidak null, konversi AchievementBank ke string untuk ditampilkan di ListView
+        if (achievements != null) {
+            filteredAchievements = achievements.map { "${it.nama} (${it.tahun})" }.toMutableList()
+        }
+
+        // Inisialisasi ListView dan Adapter
         achievementList = findViewById(R.id.achievementList)
-
-        // Inisialisasi daftar pencapaian yang difilter
-        filteredAchievements = achievements.toMutableList()
-
-        // Inisialisasi Adapter untuk ListView
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, filteredAchievements)
         achievementList.adapter = adapter
 
-        // Daftar tahun untuk Spinner
-        val years = arrayOf("All", "2024", "2023", "2022")
+        // Inisialisasi Spinner untuk filter tahun
+        spinnerTahun = findViewById(R.id.spinnerTahun)
+        val years = arrayOf("All", "2024", "2023", "2022") // Daftar tahun sesuai dengan data
         val yearAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, years)
         yearAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerTahun.adapter = yearAdapter
 
-        // Listener untuk Spinner ketika item dipilih
+        // Listener untuk Spinner, digunakan untuk memfilter achievement berdasarkan tahun
         spinnerTahun.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 val selectedYear = parent.getItemAtPosition(position).toString()
-                filterAchievementsByYear(selectedYear)
+                filterAchievementsByYear(selectedYear, achievements)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-                // Tidak ada yang dipilih, lakukan apa-apa
+                // Tidak ada aksi yang dilakukan jika tidak ada item yang dipilih
             }
         }
     }
 
-    // Fungsi untuk memfilter pencapaian berdasarkan tahun
-    private fun filterAchievementsByYear(year: String) {
+    // Fungsi untuk memfilter achievement berdasarkan tahun
+    private fun filterAchievementsByYear(year: String, achievements: List<AchievementBank>?) {
         filteredAchievements.clear()
 
         if (year == "All") {
-            // Tampilkan semua pencapaian jika "All" dipilih
-            filteredAchievements.addAll(achievements)
+            // Jika tahun "All" dipilih, tampilkan semua achievements
+            if (achievements != null) {
+                filteredAchievements.addAll(achievements.map { "${it.nama} (${it.tahun})" })
+            }
         } else {
-            // Filter pencapaian berdasarkan tahun
-            achievements.forEach { achievement ->
-                if (achievement.contains(year)) {
-                    filteredAchievements.add(achievement)
-                }
+            // Filter berdasarkan tahun
+            val yearInt = year.toIntOrNull() ?: return
+            if (achievements != null) {
+                filteredAchievements.addAll(achievements.filter { it.tahun == yearInt }
+                    .map { "${it.nama} (${it.tahun})" })
             }
         }
 

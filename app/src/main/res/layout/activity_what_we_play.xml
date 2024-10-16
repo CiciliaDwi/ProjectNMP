@@ -65,7 +65,8 @@
                     android:layout_width="155dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:text="Achievement" />
+                    android:text="Achievement"
+                    android:visibility="visible"/>
 
                 <Button
                     android:id="@+id/btnTeams"
@@ -73,8 +74,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Teams" />
-
+                    android:text="Teams"
+                    android:visibility="visible"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
