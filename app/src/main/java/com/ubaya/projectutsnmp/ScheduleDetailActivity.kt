@@ -2,15 +2,18 @@ package com.ubaya.projectutsnmp
 
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.RecyclerView
 import com.ubaya.projectutsnmp.databinding.ActivityScheduleDetailBinding
 
 private lateinit var binding: ActivityScheduleDetailBinding
 
 class ScheduleDetailActivity : AppCompatActivity() {
+    class EventViewHolder(val binding: ActivityScheduleDetailBinding)
+        : RecyclerView.ViewHolder(binding.root) {
+        fun bind(event: EventBank) {
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -18,6 +21,16 @@ class ScheduleDetailActivity : AppCompatActivity() {
         binding = ActivityScheduleDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val eventName = intent.getStringExtra("EVENT_NAME")
+        val eventTgl = intent.getStringExtra("EVENT_TGL")
+        val eventTim = intent.getStringExtra("EVENT_TIM")
+        val eventImage = intent.getIntExtra("EVENT_IMAGE", 0)
+
+        // Menampilkan data di layout, sesuaikan dengan ID view yang ada di activity_schedule_detail.xml
+        binding.txtJudul.text = eventName
+        binding.txtTgl.text = eventTgl
+        binding.txtTeam.text = eventTim
+        binding.imageView2.setImageResource(eventImage)
 
         // Menggunakan binding untuk tombol "Notify Me"
         binding.notifyButton.setOnClickListener {

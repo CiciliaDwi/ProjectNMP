@@ -3,7 +3,6 @@ package com.ubaya.projectutsnmp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.ubaya.projectutsnmp.databinding.ActivityEventListBinding
 
 private lateinit var binding: ActivityEventListBinding

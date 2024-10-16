@@ -32,6 +32,9 @@ class EventAdapter() : RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
             val context = holder.itemView.context
             val intent = Intent(context, ScheduleDetailActivity::class.java)
             intent.putExtra("EVENT_NAME", event.judul)
+            intent.putExtra("EVENT_TGL", event.tgl)
+            intent.putExtra("EVENT_TIM", event.tim)
+            intent.putExtra("EVENT_IMAGE", event.image)
             context.startActivity(intent)
         }
         holder.binding.eventDate.text = EventData.event[position].tgl
