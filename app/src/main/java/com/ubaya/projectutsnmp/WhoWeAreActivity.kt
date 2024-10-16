@@ -22,23 +22,10 @@ class WhoWeAreActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityWhoWeAreBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        //setContentView(R.layout.activity_who_we_are)
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
         likeCount = 0
-        likeText = findViewById(R.id.txtLike)
-        val likeButton: Button = findViewById(R.id.btnLike)
-
-        likeButton.setOnClickListener {
-            likeCount++
-            likeText.text = likeCount.toString()
-            Log.d("WhoWeAreActivity", "Button clicked, current like count: $likeCount")
-
+        binding.btnLike.setOnClickListener {
+            binding.btnLike.text = (likeCount++).toString()
         }
 
         binding.imageView.setOnClickListener {
