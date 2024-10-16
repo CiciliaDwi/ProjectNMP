@@ -8,16 +8,14 @@
     tools:context=".EventListActivity">
 
     <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="536dp"
-        android:layout_height="1017dp"
+        android:id="@+id/imageView6"
+        android:layout_width="568dp"
+        android:layout_height="1205dp"
         android:src="@drawable/bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView16"

@@ -3,6 +3,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00001C"
     android:baselineAligned="false"
     android:orientation="vertical"
     android:padding="16dp">
@@ -17,23 +18,29 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="E-Sports"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/gameLogo"
-        android:layout_width="325dp"
+        android:layout_width="448dp"
         android:layout_height="246dp"
         android:layout_gravity="center"
         android:contentDescription="Game Logo"
+        android:scaleType="centerCrop"
         android:src="@drawable/valorant" />
 
     <Spinner
         android:id="@+id/spinnerTahun"
-        android:layout_width="286dp"
+        android:layout_width="420dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
-        android:spinnerMode="dropdown" />
+        android:background="#00001C"
+        android:backgroundTint="#88FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        android:spinnerMode="dropdown"
+        android:visibility="visible" />
 
     <!-- Daftar pencapaian tim -->
     <TextView
@@ -42,12 +49,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Team Achievements:"
+        android:textColor="#FFFFFF"
         android:textStyle="bold" />
 
     <ListView
         android:id="@+id/achievementList"
         android:layout_width="match_parent"
-        android:layout_height="324dp"
+        android:layout_height="263dp"
+        android:background="#70F2F2F2"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp" />
 

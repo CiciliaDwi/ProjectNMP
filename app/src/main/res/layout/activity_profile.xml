@@ -9,12 +9,11 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="536dp"
-        android:layout_height="1017dp"
+        android:layout_width="568dp"
+        android:layout_height="1205dp"
         android:src="@drawable/bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

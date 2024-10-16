@@ -2,6 +2,7 @@ package com.ubaya.projectutsnmp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ubaya.projectutsnmp.databinding.ActivityListGameBinding
@@ -25,6 +26,7 @@ class ListGame : AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
+        Log.d("ListGame", "Binding RecyclerView with GameAdapter")
         binding.recGame.layoutManager = LinearLayoutManager(this)
         binding.recGame.setHasFixedSize(true)
         binding.recGame.adapter = GameAdapter()

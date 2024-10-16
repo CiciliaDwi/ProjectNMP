@@ -9,9 +9,9 @@
     tools:context=".ScheduleDetailActivity">
 
     <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="536dp"
-        android:layout_height="1017dp"
+        android:id="@+id/imageView13"
+        android:layout_width="568dp"
+        android:layout_height="1205dp"
         android:src="@drawable/bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

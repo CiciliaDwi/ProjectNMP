@@ -68,27 +68,5 @@ object GameData {
                 )
             )
         )
-//        GameBank(
-//            judul = "HAY DAY",
-//            desc = "Permainan tempur, tembak-tembakan action yang seru sekali",
-//            imageId = R.drawable.pubg1,
-//            achievement = listOf(
-//                AchievementBank("Juara 1 PMSL", 2024),
-//                AchievementBank("Juara 2 PMSL", 2023),
-//                AchievementBank("Juara 3 PMSL", 2023)
-//            ),
-//            team = listOf(
-//                TeamBank(
-//                    id = 1,
-//                    nama = "Onic Valo",
-//                    member = listOf(
-//                        MemberBank("Audry", "Scout","https://i.pravatar.cc/300?img=15"),
-//                        MemberBank("Calista", "Support","https://i.pravatar.cc/300?img=59"),
-//                        MemberBank("Cindy", "Rusher","https://i.pravatar.cc/300?img=58"),
-//                        MemberBank("Grace", "Sniper","https://i.pravatar.cc/300?img=18")
-//                    )
-//                )
-//            )
-//        )
     )
 }
