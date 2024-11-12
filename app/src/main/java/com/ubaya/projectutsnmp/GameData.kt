@@ -4,7 +4,7 @@ object GameData {
     val game = listOf(
         GameBank(
             judul = "VALORANT",
-            desc = "game tembak-tembakan juga tapi lebih seru lagi dan versi pc",
+            desc = "Game tembak-tembakan juga tapi lebih seru lagi dan versi PC",
             imageId = R.drawable.valorant,
             achievement = listOf(
                 AchievementBank("Juara 1 VCT Sea", 2024),
@@ -13,13 +13,21 @@ object GameData {
             ),
             team = listOf(
                 TeamBank(
-                    id = 1,
-                    nama = "Onic Valo",
+                    nama = "Team Jangan Telat",
                     member = listOf(
-                        MemberBank("Nanda", "Duelist",R.drawable.pictnmp),
-                        MemberBank("Cicil", "Initiator",R.drawable.pictnmp),
-                        MemberBank("Cecil", "Controller",R.drawable.pictnmp),
-                        MemberBank("Yehuda", "Sentinel",R.drawable.pictnmp)
+                        MemberBank("Nanda", "Duelist", R.drawable.pictnmp),
+                        MemberBank("Cicil", "Initiator", R.drawable.pictnmp),
+                        MemberBank("Cecil", "Controller", R.drawable.pictnmp),
+                        MemberBank("Yehuda", "Sentinel", R.drawable.pictnmp)
+                    )
+                ),
+                TeamBank(
+                    nama = "Team Pasti Menang",
+                    member = listOf(
+                        MemberBank("Nanda", "Duelist", R.drawable.pictnmp),
+                        MemberBank("Cicil", "Initiator", R.drawable.pictnmp),
+                        MemberBank("Cecil", "Controller", R.drawable.pictnmp),
+                        MemberBank("Yehuda", "Sentinel", R.drawable.pictnmp)
                     )
                 )
             )
@@ -35,13 +43,21 @@ object GameData {
             ),
             team = listOf(
                 TeamBank(
-                    id = 1,
-                    nama = "Onic Valo",
+                    nama = "Team ML Banget",
                     member = listOf(
-                        MemberBank("Riby", "Support",R.drawable.pictnmp),
-                        MemberBank("Elifel", "Tank",R.drawable.pictnmp),
-                        MemberBank("Nicole", "Fighter",R.drawable.pictnmp),
-                        MemberBank("Sara", "Mage",R.drawable.pictnmp)
+                        MemberBank("Riby", "Support", R.drawable.pictnmp),
+                        MemberBank("Elifel", "Tank", R.drawable.pictnmp),
+                        MemberBank("Nicole", "Fighter", R.drawable.pictnmp),
+                        MemberBank("Sara", "Mage", R.drawable.pictnmp)
+                    )
+                ),
+                TeamBank(
+                    nama = "Team GACOR",
+                    member = listOf(
+                        MemberBank("Nanda", "Duelist", R.drawable.pictnmp),
+                        MemberBank("Cicil", "Initiator", R.drawable.pictnmp),
+                        MemberBank("Cecil", "Controller", R.drawable.pictnmp),
+                        MemberBank("Yehuda", "Sentinel", R.drawable.pictnmp)
                     )
                 )
             )
@@ -57,13 +73,21 @@ object GameData {
             ),
             team = listOf(
                 TeamBank(
-                    id = 1,
-                    nama = "Onic Valo",
+                    nama = "Team PRO-G",
                     member = listOf(
-                        MemberBank("Audry", "Scout",R.drawable.pictnmp),
-                        MemberBank("Calista", "Support",R.drawable.pictnmp),
-                        MemberBank("Cindy", "Rusher",R.drawable.pictnmp),
-                        MemberBank("Grace", "Sniper",R.drawable.pictnmp)
+                        MemberBank("Audry", "Scout", R.drawable.pictnmp),
+                        MemberBank("Calista", "Support", R.drawable.pictnmp),
+                        MemberBank("Cindy", "Rusher", R.drawable.pictnmp),
+                        MemberBank("Grace", "Sniper", R.drawable.pictnmp)
+                    )
+                ),
+                TeamBank(
+                    nama = "Team Nomor 1",
+                    member = listOf(
+                        MemberBank("Nanda", "Duelist", R.drawable.pictnmp),
+                        MemberBank("Cicil", "Initiator", R.drawable.pictnmp),
+                        MemberBank("Cecil", "Controller", R.drawable.pictnmp),
+                        MemberBank("Yehuda", "Sentinel", R.drawable.pictnmp)
                     )
                 )
             )

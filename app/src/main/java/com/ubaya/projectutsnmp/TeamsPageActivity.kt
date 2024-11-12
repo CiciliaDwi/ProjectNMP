@@ -20,24 +20,25 @@ class TeamsPageActivity : AppCompatActivity() {
 
         val gameIndex = intent.getIntExtra("game_index", -1)
 
-        // Mengecek apakah game_index berhasil diterima
-        Log.d("TeamsPageActivity", "gameIndex: $gameIndex")
-
-        // Jika gameIndex tidak ditemukan (-1), tampilkan pesan kesalahan
-        if (gameIndex == -1) {
-            Toast.makeText(this, "Data tidak ditemukan", Toast.LENGTH_SHORT).show()
-            finish() // Tutup aktivitas jika data tidak valid
-            return
-        }
+//        // Mengecek apakah game_index berhasil diterima
+//        Log.d("TeamsPageActivity", "gameIndex: $gameIndex")
+//
+//        // Jika gameIndex tidak ditemukan (-1), tampilkan pesan kesalahan
+//        if (gameIndex == -1) {
+//            Toast.makeText(this, "Data tidak ditemukan", Toast.LENGTH_SHORT).show()
+//            finish() // Tutup aktivitas jika data tidak valid
+//            return
+//        }
 
         // Melanjutkan proses jika gameIndex valid
         val selectedGame = GameData.game[gameIndex].judul
         binding.bannerImage.setImageResource(GameData.game[gameIndex].imageId)
 
-        val filteredTeams = GameData.game
-            .find { it.judul == selectedGame }
+        val filteredTeams = GameData.game.find { it.judul == selectedGame }
             ?.team
             ?.distinctBy { it.nama }
+
+
 
         if (filteredTeams != null) {
             // Setup RecyclerView dengan list tim dari objek TeamBank

@@ -44,6 +44,7 @@ class GameAdapter() : RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
             val intent = Intent(context, AchievementsDetailActivity::class.java)
             intent.putParcelableArrayListExtra("achievement", achievementArrayList)
             intent.putExtra("nama", GameData.game[position].judul)
+            intent.putExtra("imageId", GameData.game[position].imageId)
             context.startActivity(intent)
         }
 
@@ -52,6 +53,8 @@ class GameAdapter() : RecyclerView.Adapter<GameAdapter.GameViewHolder>() {
             val context = holder.itemView.context
             val intent = Intent(context, ActivityWhatWePlayBinding::class.java)
             intent.putExtra("EVENT_NAME", game.judul)
+            intent.putExtra("game_index", position)
+            intent.putExtra("game_image_id", game.imageId)
             context.startActivity(intent)
         }
         holder.binding.imgGame.setImageResource(GameData.game[position].imageId)

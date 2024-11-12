@@ -27,6 +27,11 @@ class AchievementsDetailActivity : AppCompatActivity() {
 
         // Mengambil nama game dari Intent
         val namaGame = intent.getStringExtra("nama")
+        val gameImageId = intent.getIntExtra("imageId", -1)
+
+        if (gameImageId != -1) {
+            binding.gameLogo.setImageResource(gameImageId) // Misalkan ada ImageView dengan ID imageGame
+        }
 
         // Set the title or any UI component with the game name
         if (namaGame != null) {

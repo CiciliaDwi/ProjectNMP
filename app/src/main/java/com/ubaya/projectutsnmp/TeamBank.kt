@@ -3,17 +3,14 @@ package com.ubaya.projectutsnmp
 import android.os.Parcel
 import android.os.Parcelable
 
-data class TeamBank ( var id: Int,
-                      var nama: String,
+data class TeamBank ( var nama: String,
                       var member: List<MemberBank>): Parcelable {
     constructor(parcel: Parcel) : this(
-        parcel.readInt(),
         parcel.readString() ?: "",
         parcel.createTypedArrayList(MemberBank.CREATOR) ?: emptyList()
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.writeInt(id)
         parcel.writeString(nama)
         parcel.writeTypedList(member)
     }

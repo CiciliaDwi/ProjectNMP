@@ -17,7 +17,6 @@ class EventListActivity : AppCompatActivity() {
         binding.recSchedule.layoutManager = LinearLayoutManager(this)
         binding.recSchedule.setHasFixedSize(true)
         binding.recSchedule.adapter = EventAdapter()
-
         binding.imageProfile.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
