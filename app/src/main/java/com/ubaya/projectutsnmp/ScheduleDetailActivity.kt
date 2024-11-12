@@ -34,9 +34,7 @@ class ScheduleDetailActivity : AppCompatActivity() {
         binding.txtTeam.text = eventTim
         binding.imageView2.setImageResource(eventImage)
         binding.eventDesc.text = eventDesc
-
-        //test
-
+    
         // Menggunakan binding untuk tombol "Notify Me"
         binding.notifyButton.setOnClickListener {
             // Tampilkan toast message menggunakan binding
