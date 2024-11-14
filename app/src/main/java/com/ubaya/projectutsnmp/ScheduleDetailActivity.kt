@@ -39,6 +39,7 @@ class ScheduleDetailActivity : AppCompatActivity() {
         binding.notifyButton.setOnClickListener {
             // Tampilkan toast message menggunakan binding
             Toast.makeText(this, "Notification created.", Toast.LENGTH_SHORT).show()
+
         }
 
         binding.imageProfile2.setOnClickListener {

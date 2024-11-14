@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.7\\com.ubaya.projectutsnmp.app-mergeDebugResources-30:\\layout\\activity_schedule_detail.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.7\\com.ubaya.projectutsnmp.app-main-33:\\layout\\activity_schedule_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.7\\com.ubaya.projectutsnmp.app-mergeDebugResources-30:\\layout\\activity_who_we_are.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.7\\com.ubaya.projectutsnmp.app-main-33:\\layout\\activity_who_we_are.xml"
+    },
+    {
+        "merged": "com.ubaya.projectutsnmp.app-mergeDebugResources-30:/layout/activity_schedule_page.xml",
+        "source": "com.ubaya.projectutsnmp.app-main-33:/layout/activity_schedule_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.7\\com.ubaya.projectutsnmp.app-mergeDebugResources-30:\\layout\\activity_schedule_page.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.7\\com.ubaya.projectutsnmp.app-main-33:\\layout\\activity_schedule_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asus\\.gradle\\daemon\\8.7\\com.ubaya.projectutsnmp.app-mergeDebugResources-30:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Asus\\.gradle\\daemon\\8.7\\com.ubaya.projectutsnmp.app-main-33:\\layout\\activity_main.xml"
+    }
+]
