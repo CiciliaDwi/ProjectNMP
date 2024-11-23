@@ -1,6 +1,7 @@
 package com.ubaya.projectutsnmp
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,6 +19,22 @@ class MainActivity : AppCompatActivity() {
         // Inisialisasi View Binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val sharedPreferences: SharedPreferences = getSharedPreferences("UserSession", MODE_PRIVATE)
+
+        // Logika tombol logout
+        binding.btnLogout.setOnClickListener {
+            // Hapus sesi pengguna
+            with(sharedPreferences.edit()) {
+                clear()
+                apply()
+            }
+
+            // Redirect ke halaman SignIn
+            val intent = Intent(this, sign_in::class.java)
+            startActivity(intent)
+            finish() // Tutup MainActivity
+        }
 
         binding.btnGame.setOnClickListener {
             val intent = Intent(this, ListGame::class.java)

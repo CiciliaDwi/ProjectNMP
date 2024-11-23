@@ -26,7 +26,7 @@ class sign_in : AppCompatActivity() {
         // Check if the user has logged in before
         if (isLoggedIn) {
             // Redirect to What We Play activity
-            val intent = Intent(this, ActivityWhatWePlayBinding::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish() // Close the sign-in activity
         }
@@ -42,11 +42,12 @@ class sign_in : AppCompatActivity() {
                 // Save login state in SharedPreferences
                 with(sharedPreferences.edit()) {
                     putBoolean("isLoggedIn", true)
+                    putString("username", username)
                     apply()
                 }
 
                 // Redirect to What We Play activity
-                val intent = Intent(this, ActivityWhatWePlayBinding::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish() // Close the sign-in activity
             } else {

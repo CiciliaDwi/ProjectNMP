@@ -90,7 +90,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btnSignUp"
+            android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="164dp"
@@ -136,14 +136,11 @@
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="137dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#78FFFFFF"
-        android:text="Sign Up"
-        android:textColor="#000000"
-        android:textSize="14sp"
+        android:layout_width="147dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="28dp"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

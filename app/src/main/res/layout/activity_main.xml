@@ -90,7 +90,7 @@
         app:srcCompat="@drawable/teams" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgMenu"
         android:layout_width="55dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -108,5 +108,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profiles" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="138dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="60dp"
+        android:text="LOGOUT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
