@@ -16,7 +16,6 @@ private lateinit var binding: ActivityWhoWeAreBinding
 class WhoWeAreActivity : AppCompatActivity() {
 
     private var likeCount: Int = 0
-    private lateinit var likeText: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

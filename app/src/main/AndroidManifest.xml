@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -10,20 +12,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProjectUTSNMP"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:exported="false" />
         <activity
             android:name=".sign_up"
             android:exported="false" />
         <activity
             android:name=".sign_in"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".ListMemberActivity"
             android:exported="false" />
@@ -38,7 +37,7 @@
             android:exported="false" />
         <activity
             android:name=".EventListActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".AchievementsDetailActivity"
             android:exported="false" />
@@ -50,7 +49,13 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

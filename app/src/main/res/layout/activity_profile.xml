@@ -8,16 +8,6 @@
     tools:context=".ProfileActivity">
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="568dp"
-        android:layout_height="1205dp"
-        android:src="@drawable/bg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/imageView21"
         android:layout_width="55dp"
         android:layout_height="50dp"
@@ -45,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="KELOMPOK HMP NMP"
-        android:textColor="#FFFFFF"
+        android:textColor="#CE2C2C"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="hmpnmp@gmail.com"
-        android:textColor="#FFFFFF"
+        android:textColor="#B12323"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

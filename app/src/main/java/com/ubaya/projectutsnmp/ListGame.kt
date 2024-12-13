@@ -19,10 +19,10 @@ class ListGame : AppCompatActivity() {
         binding.recGame.setHasFixedSize(true)
         binding.recGame.adapter = GameAdapter()
 
-        binding.imageProfiles.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
-            startActivity(intent)
-        }
+//        binding.imageProfiles.setOnClickListener {
+//            val intent = Intent(this, ProfileActivity::class.java)
+//            startActivity(intent)
+//        }
     }
     override fun onResume() {
         super.onResume()
