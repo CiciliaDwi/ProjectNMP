@@ -20,7 +20,7 @@ class sign_in : AppCompatActivity() {
         setContentView(binding.root)
         super.onCreate(savedInstanceState)
 
-        val url = "http://10.0.2.2/music/login.php"
+        val url = "http://10.0.2.2/native_160422148/login.php"
 
         // Initialize SharedPreferences
         val sharedPreferences: SharedPreferences = getSharedPreferences("UserSession", MODE_PRIVATE)
@@ -59,7 +59,7 @@ class sign_in : AppCompatActivity() {
             }
         }
 
-        binding.btnSignUp.setOnClickListener {
+        binding.signUpButton.setOnClickListener {
             val intent = Intent(this, ActivitySignUpBinding::class.java)
             startActivity(intent)
         }
