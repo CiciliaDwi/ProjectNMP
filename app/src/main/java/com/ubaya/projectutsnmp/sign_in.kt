@@ -36,7 +36,7 @@ class sign_in : AppCompatActivity() {
         // Check if the user has logged in before
         if (isLoggedIn) {
             // Redirect to What We Play activity
-            val intent = Intent(this, ActivityWhatWePlayBinding::class.java)
+            val intent = Intent(this, WhatWePlayFragment::class.java)
             startActivity(intent)
             finish() // Close the sign-in activity
         }
@@ -84,7 +84,7 @@ class sign_in : AppCompatActivity() {
             var password = binding.txtBoxPass.text.toString()
             for (user in account){
                 if(user.username == username && user.password == password){
-                    val intent = Intent(this, ActivityWhatWePlayBinding::class.java)
+                    val intent = Intent(this, WhatWePlayFragment::class.java)
                     startActivity(intent)
                     finish() // Close the sign-in activity
                 }
@@ -114,7 +114,7 @@ class sign_in : AppCompatActivity() {
         }
 
         binding.signUpButton.setOnClickListener {
-            val intent = Intent(this, ActivitySignUpBinding::class.java)
+            val intent = Intent(this, sign_up::class.java)
             startActivity(intent)
         }
     }
