@@ -33,12 +33,10 @@ class sign_in : AppCompatActivity() {
         val sharedPreferences: SharedPreferences = getSharedPreferences("UserSession", MODE_PRIVATE)
         val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
 
-        // Check if the user has logged in before
         if (isLoggedIn) {
-            // Redirect to What We Play activity
             val intent = Intent(this, WhatWePlayFragment::class.java)
             startActivity(intent)
-            finish() // Close the sign-in activity
+            finish()
         }
 
         val q = Volley.newRequestQueue(this)
@@ -50,16 +48,6 @@ class sign_in : AppCompatActivity() {
                 val obj = JSONObject(it)
                 if (obj.getString("result") == "success") {
                     val data = obj.getJSONArray("data")
-//                    for (i in 0 until data.length()) {
-//                        val plyObj = data.getJSONObject(i)
-//                        val users = UserBank(
-//                            plyObj.getInt("id"),
-//                            plyObj.getString("username"),
-//                            plyObj.getString("password"),
-//                            plyObj.getString("img_url")
-//                        )
-//                        account.add(users)
-//                    }
                     for (i in 0 until data.length()) {
                         val plyObj = data.getJSONObject(i)
                         val users = UserBank(
@@ -90,27 +78,6 @@ class sign_in : AppCompatActivity() {
                 }
             }
             Toast.makeText(this, "Data Tidak Ada", Toast.LENGTH_SHORT).show()
-            // Example: Validate user credentials (replace this with your validation logic)
-//            val username = binding.txtBoxusername.editText?.text.toString()
-//            val password = binding.txtBoxpass.editText?.text.toString()
-//
-//            if (username.isNotEmpty() && password.isNotEmpty()) {
-//                // If login is successful:
-//                // Save login state in SharedPreferences
-//                with(sharedPreferences.edit()) {
-//                    putBoolean("isLoggedIn", true)
-//                    apply()
-//                }
-//
-//                // Redirect to What We Play activity
-//                val intent = Intent(this, ActivityWhatWePlayBinding::class.java)
-//                startActivity(intent)
-//                finish() // Close the sign-in activity
-//            } else {
-//                // Handle empty fields or show an error message
-//                binding.txtBoxusername.error = "Please enter a username"
-//                binding.txtBoxpass.error = "Please enter a password"
-//            }
         }
 
         binding.signUpButton.setOnClickListener {

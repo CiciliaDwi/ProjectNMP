@@ -44,7 +44,6 @@ class sign_up : AppCompatActivity() {
                     val intent = Intent(this, sign_in::class.java)
                     finish()
                 } else {
-                    // Registration failed, display an error message
                     Toast.makeText(this, "Registration failed", Toast.LENGTH_SHORT).show()
                 }
             },

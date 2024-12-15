@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.ubaya.projectutsnmp.databinding.ActivityApplyNewTeamBinding
 import com.ubaya.projectutsnmp.databinding.ActivityNavigationDrawerBinding
 import com.ubaya.projectutsnmp.databinding.ActivityProfileBinding
 
@@ -34,6 +35,10 @@ class NavigationDrawerActivity : AppCompatActivity() {
             val intent = Intent(this, sign_in::class.java)
             startActivity(intent)
             finish() // Tutup MainActivity
+        }
+        binding.btnApplyTeam.setOnClickListener{
+            val intent = Intent(this, ApplyNewTeamActivity::class.java)
+            startActivity(intent)
         }
     }
 }
